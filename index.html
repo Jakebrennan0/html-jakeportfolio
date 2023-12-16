@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jakeflix</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #141414;
+            color: white;
+        }
+
+        header {
+            background-color: #E50914;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #featured, #movies, #tv-shows {
+            padding: 20px;
+        }
+
+        .movie, .show {
+            display: inline-block;
+            margin-right: 10px;
+            text-align: center;
+        }
+
+        .movie img, .show img {
+            width: 150px;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #181818;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <h1>Jakeflix</h1>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Genres</a></li>
+                <li><a href="#">New Releases</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="featured">
+            <h2>Featured Show</h2>
+            <img src="https://vmndims.binge.com.au/api/v2/img/6507958ae4b0e1d03dcd6c86-1702332887036?location=tile&imwidth=768" alt="Featured Show" width="50%"> <!-- Replace with actual image link -->
+        </section>
+
+        <section id="TV Shows">
+            <h2>TV Shows</h2>
+            <div class="movie">
+                <img src="https://vmndims.binge.com.au/api/v2/img/5e6eead9e4b09c405c046be1-1694500768342?location=tile&imwidth=768" alt="Movie 1"> <!-- Replace with actual movie thumbnail links -->
+                <p>Game of Thrones </p>
+            </div>
+            <div class="movie">
+                <img src="https://vmndims.binge.com.au/api/v2/img/5f4c76b8e4b0d29bc0b12d9f-1700546335097?location=tile&imwidth=768" alt="Movie 1"> <!-- Replace with actual movie thumbnail links -->
+                <p>Law & Order</p>
+            </div>
+            <!-- Repeat for more movies -->
+        </section>
+
+        <section id="Movies">
+            <h2>Movies</h2>
+            <div class="show">
+                <img src="https://vmndims.binge.com.au/api/v2/img/653f4ee6e4b0b1f1892c8f9d-1699252336514?location=tile&imwidth=768" alt="Show 1"> <!-- Replace with actual show thumbnail links -->
+                <p>Super Mario Bros</p>
+            </div>
+            <div class="show">
+                <img src="https://vmndims.binge.com.au/api/v2/img/6542f2d0e4b08459a4a9966b-1698886411983?location=tile&imwidth=768" alt="Show 1"> <!-- Replace with actual show thumbnail links -->
+                <p>Spiderman</p>
+            </div>
+            <!-- Repeat for more shows -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Jakeflix. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function showFeaturedShow() {
+                alert("Featured show details go here!");
+            }
+
+            var featuredShow = document.getElementById("featured");
+            featuredShow.addEventListener("click", showFeaturedShow);
+        });
+    </script>
+</body>
+</html>
